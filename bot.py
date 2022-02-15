@@ -26,7 +26,5 @@ for FileName in os.listdir('./cmds'):
     if FileName.endswith('.py'):
         bot.load_extension(f"cmds.{FileName[:-3]}")
 
-print('hello')
-
 if __name__ == "__main__":
     bot.run(jdata["Token"])
